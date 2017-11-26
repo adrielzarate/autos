@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>paso 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="">
+            <div class="row">
+                <div class="col-x12">
+                    <ol class="nav nav-pills">
+                        <li class="disabled" role="presentation">
+                            <a href="#">Lugar, fecha y hora</a>
+                        </li>
+                        <li class="disabled" role="presentation">
+                            <a href="#">Vehiculo y adicionales</a>
+                        </li>
+                        <li class="disabled" role="presentation">
+                            <a href="#">Datos personales y pago</a>
+                        </li>
+                        <li class="disabled" role="presentation">
+                            <a href="#">Comprobante</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2 class="text-uppercase">Datos del Conductor</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="required" for="driverFirstName">Nombre</label>
+                                <input class="form-control" id="driverFirstName" type="Text" placeholder="Escriba el nombre del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="required" for="driverLastName">Apellido</label>
+                                <input class="form-control" id="driverLastName" type="text" placeholder="Escriba el apellido del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <label class="required" for="driverEmail">Correo Electrónico</label>
+                                <input class="form-control" id="driverEmail" type="email" placeholder="Escriba el e-mail del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="required" for="driverAge">Edad</label>
+                                <input class="form-control" id="driverAge" type="text" placeholder="Escriba la edad del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <fieldset class="form-group">
+                                <legend class="text-uppercase required">Tipo de documento</legend>
+                                <label class="radio-inline">
+                                    <input type="radio" name="idType" value="dni" required> DNI
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="idType" value="passport"> Pasaporte
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="required" for="driverNumber">Numero</label>
+                                <input class="form-control" id="driverNumber" type="text" placeholder="Escriba el número del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label class="required" for="driverPhoneNum">Teléfono (Cód País + Cód Área + Número)</label>
+                                <input class="form-control" id="driverPhoneNum" type="text" placeholder="Escriba el número de teléfono del conductor" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <input type="checkbox" id="SMS">
+                                <label for="SMS">
+                                    Deseo recibir mensajes de texto (SMS) con respecto a mi reserva.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <input type="checkbox" id="addComent">
+                                <label for="addComent">
+                                    ¿Desea agregar un comentario a su reserva?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <h3 class="text-uppercase text-xs-center">Importante</h3>
+                            <p>El conductor principal deberá presentar una licencia de conducir válida (con antigüedad mínima de dos años) y una tarjeta de crédito a su nombre al momento de retirar el vehículo. Sobre la misma se realizará el bloqueo correspondiente a modo de garantía. Vale aclarar que noes necesario que coincida con la tarjeta utilizada en el prepago.</p>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <input type="checkbox" id="termsAccept">
+                                <label for="termsAccept">
+                                    He leído y acepto los <a class="text-uppercase" href="">términos y condiciones</a> del alquiler.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <h2 class="text-uppercase text-xs-center">Tu Reserva</h2>
+                    <div class="row">
+
+                        <div class="col-xs-12 text-xs-center">
+                            <h3 class="text-uppercase float-sm-l">Lugar y duracion alquiler</h3>
+                            <a class="text-uppercase float-sm-r" href="">Modificar</a>
+                        </div>
+
+                        <div class="row text-xs-center">
+                            <div class="col-sm-3">
+                                <h4 class="text-uppercase">Entrega:</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="mb-0">Aeropuerto El Plumerillo, Mza</p>
+                                <p class="mb-0"><span class="text-uppercase">Vie 17 Oct 2017</span>, 12:15hs</p>
+                                <p class="text-uppercase mb-0">LAN - Vuelo AJX-789</p>
+                            </div>
+                        </div>
+                        <div class="row text-xs-center">
+                            <div class="col-sm-3">
+                                <h4>Devolución:</h4>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="mb-0">Benito Juárez 1679, Gllén, Mza</p>
+                                <p class="mb-0"><span class="text-uppercase">Mar 20 Oct 2017</span>, 18:00hs</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4 class="text-uppercase text-xs-center">Vehículo</h4>
+                                <img class="img-responsive" src="img/chevrolet.jpg" alt="">
+                                <h5 class="text-uppercase">Chevrolet Celta Advantage</h5>
+                                <ul>
+                                    <li><span>Pasajeros</span></li>
+                                    <li><span>Equipaje</span></li>
+                                    <li><span>Puertas</span></li>
+                                    <li><span>Aire</span></li>
+                                    <li><span>Manual</span></li>
+                                </ul>
+                                <h4 class="text-uppercase">Incluye</h4>
+                                <ul>
+                                    <li>Cobertura parcial por daños y/o robo</li>
+                                    <li>Responsabilidad civil</li>
+                                    <li>200km diarios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4 class="text-uppercase">Extras</h4>
+                                <ul class="extras">
+                                    <li>Cadenas p/nieve x4d /($25 p/d)</li>
+                                    <li>Cadenas</li>
+                                    <li>Reducción franquicia p/Daños x 4d. /($25 p/d)</li>
+                                    <li>Silla p/bebés8 x4d /($25 p/d)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6"><span class="text-uppercase">Importe:</span></div>
+                            <div class="col-xs-6"><strong>AR$ 1100</strong></div>
+
+                            <div class="col-xs-6"><span class="text-uppercase">IVA (21%):</span></div>
+                            <div class="col-xs-6"><strong>AR$ 210</strong></div>
+
+                            <div class="col-xs-6"><span class="text-uppercase">Importe Total:</span></div>
+                            <div class="col-xs-6"><strong>AR$ 1210</strong></div>
+
+                            <div class="col-sm-6"><strong class="text-uppercase">Importe Reserva</strong></div>
+
+                            <div class="col-xs-12"><strong>$302</strong></div>
+
+                            <div class="col-xs-6"><strong class="text-uppercase">Total a pagar al retirar:</strong></div>
+                            <div class="col-sm-6"><strong>AR$ 908</strong></div>
+
+                            <div class="col-xs-12"><p>Los precios están expresados en pesos argentinos.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <button class="text-uppercase btn btn-cta btn-primary" type="submit">Realizar Pago</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
