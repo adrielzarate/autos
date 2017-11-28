@@ -26,6 +26,7 @@ select.form-control,
 .form-control {
     border-radius: 0;
     -webkit-appearance: none;
+    -moz-appearance: none;
     -webkit-border-radius: 0px;
     height: 40px;
     box-shadow: none;
@@ -56,12 +57,34 @@ select {
     box-shadow: none;
 }
 
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+    content: "\e806";
+    font-family: 'icomoon' !important;
+}
+
 .input-group-addon {
     border-radius: 0;
     background-color: #fff;
     color: #999;
 }
 
+.radio {
+    display: inline-block;
+}
+
+.radio.red-radio label::before {
+    border-color: #bf2734;
+}
+
+.radio.red-radio label::after {
+    border-color: #bf2734;
+    background-color: #bf2734;
+    width: 7px;
+    height: 7px;
+    left: 5px;
+    top: 5px;
+}
 
 
 /* Fonts */
@@ -220,17 +243,21 @@ a.dropdown:after {
 }
 
 .nav > li:not(:last-child)::after {
-    content: "\f105";
+    content: "\e82c";
     display: inline-block;
     position: absolute;
-    bottom: -9px;
+    bottom: -6px;
     right: -17px;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 40px;
+    font-size: 32px;
     color: #999;
 }
 
@@ -262,6 +289,14 @@ a.dropdown:after {
     }
 }
 
+/* Car Features */
+
+.car-features li {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* List Checked */
 
 .list-checked {
@@ -274,15 +309,22 @@ a.dropdown:after {
 }
 
 .list-checked li:before {
-    content: "\f00c";
+    content: "\e806";
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #39B54A;
     margin-right: 5px;
+}
+
+.list-checked.list-checked-green li:before {
+    color: #39B54A;
 }
 
 /* Helpers */
@@ -294,6 +336,14 @@ a.dropdown:after {
 .mb-25 { margin-bottom: 25px; }
 .mb-3  { margin-bottom: 30px; }
 .mb-35 { margin-bottom: 35px; }
+
+.mr-0  { margin-right: 0;    }
+.mr-1  { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-2  { margin-right: 20px; }
+.mr-25 { margin-right: 25px; }
+.mr-3  { margin-right: 30px; }
+.mr-35 { margin-right: 35px; }
 
 .pt-0  { padding-top: 0;    }
 .pt-1  { padding-top: 10px; }
@@ -317,6 +367,14 @@ a.dropdown:after {
 
 .bg-lightest-gray {
     background-color: #F1F2F2;
+}
+
+.d-block {
+    display: block;
+}
+
+.cols-3 {
+    width: 30%;
 }
 
 
@@ -353,6 +411,16 @@ a.dropdown:after {
     /* utils */
     .w-sm-100 {
         width: 100%;
+    }
+
+    .same-height-sm {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .vertical-center-sm {
+        display: flex;
+        align-items: center;
     }
 }
 
