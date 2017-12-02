@@ -35,192 +35,195 @@
             </div>
             <div class="row">
                 <div class="col-sm-5">
-                    <h2 class="text-uppercase text-xs-center title-bigger">Datos del Conductor</h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="required" for="driverFirstName">Nombre</label>
-                                <input class="form-control" id="driverFirstName" type="Text" placeholder="Escriba el nombre del conductor" required>
+                    <h2 class="text-uppercase text-xs-center title-bigger pl-sm-15">Datos del Conductor</h2>
+                    <div class="box-border-sm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required" for="driverFirstName">Nombre</label>
+                                    <input class="form-control" id="driverFirstName" type="Text" placeholder="Escriba el nombre del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="required" for="driverLastName">Apellido</label>
-                                <input class="form-control" id="driverLastName" type="text" placeholder="Escriba el apellido del conductor" required>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required" for="driverLastName">Apellido</label>
+                                    <input class="form-control" id="driverLastName" type="text" placeholder="Escriba el apellido del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="form-group">
-                                <label class="required" for="driverEmail">Correo Electrónico</label>
-                                <input class="form-control" id="driverEmail" type="email" placeholder="Escriba el e-mail del conductor" required>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label class="required" for="driverEmail">Correo Electrónico</label>
+                                    <input class="form-control" id="driverEmail" type="email" placeholder="Escriba el e-mail del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label class="required" for="driverAge">Edad</label>
-                                <input class="form-control" id="driverAge" type="text" placeholder="Escriba la edad del conductor" required>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label class="required" for="driverAge">Edad</label>
+                                    <input class="form-control" id="driverAge" type="text" placeholder="Escriba la edad del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <fieldset class="form-group">
-                                <legend class="text-uppercase required">Tipo de documento</legend>
-                                  <div class="radio red-radio mr-1">
-                                      <input type="radio" name="idType" id="dni" value="dni">
-                                      <label for="dni">
-                                          DNI
-                                      </label>
-                                  </div>
-                                  <div class="radio red-radio">
-                                      <input type="radio" name="idType" id="passport" value="passport" checked>
-                                      <label for="passport">
-                                          Pasaporte
-                                      </label>
-                                  </div>
-                            </fieldset>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="required" for="driverNumber">Numero</label>
-                                <input class="form-control" id="driverNumber" type="text" placeholder="Escriba el número del conductor" required>
+                            <div class="col-sm-6">
+                                <fieldset class="form-group">
+                                    <legend class="text-uppercase required">Tipo de documento</legend>
+                                      <div class="radio red-radio mr-1">
+                                          <input type="radio" name="idType" id="dni" value="dni">
+                                          <label for="dni">
+                                              DNI
+                                          </label>
+                                      </div>
+                                      <div class="radio red-radio">
+                                          <input type="radio" name="idType" id="passport" value="passport" checked>
+                                          <label for="passport">
+                                              Pasaporte
+                                          </label>
+                                      </div>
+                                </fieldset>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label class="required" for="driverPhoneNum">Teléfono (Cód País + Cód Área + Número)</label>
-                                <input class="form-control" id="driverPhoneNum" type="text" placeholder="Escriba el número de teléfono del conductor" required>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required" for="driverNumber">Numero</label>
+                                    <input class="form-control" id="driverNumber" type="text" placeholder="Escriba el número del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="checkbox">
-                                <input type="checkbox" id="SMS">
-                                <label for="SMS">
-                                    Deseo recibir mensajes de texto (SMS) con respecto a mi reserva.
-                                </label>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="required" for="driverPhoneNum">Teléfono (Cód País + Cód Área + Número)</label>
+                                    <input class="form-control" id="driverPhoneNum" type="text" placeholder="Escriba el número de teléfono del conductor" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="checkbox">
-                                <input type="checkbox" id="addComent">
-                                <label for="addComent">
-                                    ¿Desea agregar un comentario a su reserva?
-                                </label>
+                            <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="SMS">
+                                    <label for="SMS">
+                                        Deseo recibir mensajes de texto (SMS) con respecto a mi reserva.
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <h3 class="text-uppercase text-xs-center title-medium">Importante</h3>
-                            <p>El conductor principal deberá presentar una licencia de conducir válida (con antigüedad mínima de dos años) y una tarjeta de crédito a su nombre al momento de retirar el vehículo. Sobre la misma se realizará el bloqueo correspondiente a modo de garantía. Vale aclarar que noes necesario que coincida con la tarjeta utilizada en el prepago.</p>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="checkbox">
-                                <input type="checkbox" id="termsAccept">
-                                <label for="termsAccept">
-                                    He leído y acepto los <a class="text-uppercase" href="">términos y condiciones</a> del alquiler.
-                                </label>
+                            <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="addComent">
+                                    <label for="addComent">
+                                        ¿Desea agregar un comentario a su reserva?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 mt-2">
+                                <h3 class="text-uppercase text-xs-center title-medium">Importante</h3>
+                                <p>El conductor principal deberá presentar una licencia de conducir válida (con antigüedad mínima de dos años) y una tarjeta de crédito a su nombre al momento de retirar el vehículo. Sobre la misma se realizará el bloqueo correspondiente a modo de garantía. Vale aclarar que noes necesario que coincida con la tarjeta utilizada en el prepago.</p>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="termsAccept">
+                                    <label for="termsAccept">
+                                        He leído y acepto los <a class="text-uppercase" href="">términos y condiciones</a> del alquiler.
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-7">
-                    <h2 class="text-uppercase text-xs-center title-bigger">Tu Reserva</h2>
-                    <div class="row">
-
-                        <div class="col-xs-12 text-xs-center">
-                            <h3 class="text-uppercase float-sm-l title-big">Lugar y duracion alquiler</h3>
-                            <a class="text-uppercase float-sm-r" href="">Modificar <span class="icon-pencil-alt"></span></a>
-                        </div>
-
-                        <div class="col-xs-12">
-                            <div class="row text-xs-center">
-                                <div class="col-sm-3">
-                                    <h4 class="text-uppercase title-medium">Entrega:</h4>
-                                </div>
-                                <div class="col-sm-8">
-                                    <p class="mb-0">Aeropuerto El Plumerillo, Mza</p>
-                                    <p class="mb-0"><span class="text-uppercase">Vie 17 Oct 2017</span>, 12:15hs</p>
-                                    <p class="text-uppercase mb-0">LAN - Vuelo AJX-789</p>
-                                </div>
+                    <h2 class="text-uppercase text-xs-center title-bigger pl-sm-15">Tu Reserva</h2>
+                    <div class="box-border-sm">
+                        <div class="row">
+                            <div class="col-xs-12 text-xs-center mb-2">
+                                <h3 class="text-uppercase float-sm-l title-big">Lugar y duracion alquiler</h3>
+                                <a class="text-uppercase float-sm-r" href="">Modificar <span class="icon-pencil-alt"></span></a>
                             </div>
-                            <div class="row text-xs-center">
-                                <div class="col-sm-3">
-                                    <h4 class="text-uppercase title-medium">Devolución:</h4>
+
+                            <div class="col-xs-12">
+                                <div class="row text-xs-center mb-2">
+                                    <div class="col-sm-3">
+                                        <h4 class="text-uppercase title-medium">Entrega:</h4>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p class="mb-0">Aeropuerto El Plumerillo, Mza</p>
+                                        <p class="mb-0"><span class="text-uppercase">Vie 17 Oct 2017</span>, 12:15hs</p>
+                                        <p class="text-uppercase mb-0">LAN - Vuelo AJX-789</p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-8">
-                                    <p class="mb-0">Benito Juárez 1679, Gllén, Mza</p>
-                                    <p class="mb-0"><span class="text-uppercase">Mar 20 Oct 2017</span>, 18:00hs</p>
+                                <div class="row text-xs-center mb-2">
+                                    <div class="col-sm-3">
+                                        <h4 class="text-uppercase title-medium">Devolución:</h4>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p class="mb-0">Benito Juárez 1679, Gllén, Mza</p>
+                                        <p class="mb-0"><span class="text-uppercase">Mar 20 Oct 2017</span>, 18:00hs</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h4 class="text-uppercase text-xs-center title-big">Vehículo</h4>
-                                    <img class="img-responsive" src="img/chevrolet.jpg" alt="">
-                                    <h5 class="text-uppercase text-xs-center title-medium">Chevrolet Celta Advantage</h5>
-                                    <div class="car-features">
-                                        <ul class="list-inline text-center bg-lightest-gray">
-                                            <li>
-                                                <span class="title-medium">4</span> <span class="text-bigger icon-passengers"></span>
-                                                <span class="text-uppercase d-block">Pasajeros</span>
-                                            </li>
-                                            <li>
-                                                <span class="title-medium">4</span> <span class="text-bigger icon-luggage"></span>
-                                                <span class="text-uppercase d-block">Equipaje</span>
-                                            </li>
-                                            <li>
-                                                <span class="title-medium">4</span> <span class="text-bigger icon-doors"></span>
-                                                <span class="text-uppercase d-block">Puertas</span>
-                                            </li>
-                                            <li>
-                                                <span class="text-bigger icon-airconditioning"></span>
-                                                <span class="text-uppercase d-block">Aire</span>
-                                            </li>
-                                            <li>
-                                                <span class="text-bigger icon-transmission-manual"></span>
-                                                <span class="text-uppercase d-block">Manual</span>
-                                            </li>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4 class="text-uppercase text-xs-center title-big">Vehículo</h4>
+                                        <img class="img-responsive" src="img/chevrolet.png" alt="">
+                                        <h5 class="text-uppercase text-xs-center title-medium">Chevrolet Celta Advantage</h5>
+                                        <div class="car-features">
+                                            <ul class="list-inline text-center bg-lightest-gray">
+                                                <li>
+                                                    <span class="title-medium">4</span> <span class="text-bigger icon-passengers"></span>
+                                                    <span class="text-uppercase d-block">Pasajeros</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title-medium">4</span> <span class="text-bigger icon-luggage"></span>
+                                                    <span class="text-uppercase d-block">Equipaje</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title-medium">4</span> <span class="text-bigger icon-doors"></span>
+                                                    <span class="text-uppercase d-block">Puertas</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-bigger icon-airconditioning"></span>
+                                                    <span class="text-uppercase d-block">Aire</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-bigger icon-transmission-manual"></span>
+                                                    <span class="text-uppercase d-block">Manual</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="text-uppercase text-xs-center title-medium">Incluye</h4>
+                                        <ul class="list-checked">
+                                            <li>Cobertura parcial por daños y/o robo</li>
+                                            <li>Responsabilidad civil</li>
+                                            <li>200km diarios</li>
                                         </ul>
                                     </div>
-                                    <h4 class="text-uppercase text-xs-center title-medium">Incluye</h4>
-                                    <ul class="list-checked">
-                                        <li>Cobertura parcial por daños y/o robo</li>
-                                        <li>Responsabilidad civil</li>
-                                        <li>200km diarios</li>
-                                    </ul>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h4 class="text-uppercase text-xs-center title-medium">Extras</h4>
-                                    <ul class="list-checked extras">
-                                        <li>Cadenas p/nieve x4d /($25 p/d)</li>
-                                        <li>Cadenas</li>
-                                        <li>Reducción franquicia p/Daños x 4d. /($25 p/d)</li>
-                                        <li>Silla p/bebés8 x4d /($25 p/d)</li>
-                                    </ul>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4 class="text-uppercase text-xs-center title-medium">Extras</h4>
+                                        <ul class="list-checked extras">
+                                            <li>Cadenas p/nieve x4d /($25 p/d)</li>
+                                            <li>Cadenas</li>
+                                            <li>Reducción franquicia p/Daños x 4d. /($25 p/d)</li>
+                                            <li>Silla p/bebés8 x4d /($25 p/d)</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6"><span class="text-uppercase">Importe:</span></div>
-                                <div class="col-xs-6"><strong>AR$ 1100</strong></div>
+                                <div class="row">
+                                    <div class="col-xs-6"><span class="text-uppercase">Importe:</span></div>
+                                    <div class="col-xs-6 text-right mb-15"><strong>AR$ 1100</strong></div>
 
-                                <div class="col-xs-6"><span class="text-uppercase">IVA (21%):</span></div>
-                                <div class="col-xs-6"><strong>AR$ 210</strong></div>
+                                    <div class="col-xs-6"><span class="text-uppercase">IVA (21%):</span></div>
+                                    <div class="col-xs-6 text-right mb-15"><strong>AR$ 210</strong></div>
 
-                                <div class="col-xs-6"><span class="text-uppercase">Importe Total:</span></div>
-                                <div class="col-xs-6"><strong>AR$ 1210</strong></div>
+                                    <div class="col-xs-6"><span class="text-uppercase">Importe Total:</span></div>
+                                    <div class="col-xs-6 text-right mb-15"><strong>AR$ 1210</strong></div>
 
-                                <div class="col-sm-6"><strong class="text-uppercase">Importe Reserva</strong></div>
+                                    <div class="col-sm-6 text-center-xs"><strong class="text-uppercase">Importe Reserva</strong></div>
 
-                                <div class="col-xs-12"><strong>$302</strong></div>
+                                    <div class="col-xs-12 text-right-sm text-center-xs"><strong>$302</strong></div>
 
-                                <div class="col-xs-6"><strong class="text-uppercase">Total a pagar al retirar:</strong></div>
-                                <div class="col-sm-6"><strong>AR$ 908</strong></div>
+                                    <div class="col-sm-6 col-xs-12 text-center-xs"><strong class="text-uppercase">Total a pagar al retirar:</strong></div>
+                                    <div class="col-sm-6 col-xs-12 text-right-sm text-center-xs"><strong>AR$ 908</strong></div>
 
-                                <div class="col-xs-12"><p>Los precios están expresados en pesos argentinos.</p></div>
+                                    <div class="col-xs-12"><p>Los precios están expresados en pesos argentinos.</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <button class="text-uppercase btn btn-cta btn-primary" type="submit">Realizar Pago</button>
+                    <button class="text-uppercase btn btn-cta btn-primary w-xs-100 float-sm-r mt-2" type="submit">Realizar Pago</button>
                 </div>
             </div>
         </form>
