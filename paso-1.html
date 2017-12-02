@@ -15,156 +15,158 @@
 <body>
     <div class="container-fluid">
         <form action="">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label class="text-uppercase" for="delivery">Entrega</label>
-                        <select class="form-control" id="delivery">
-                            <option>Aeropuerto el Plumerillo</option>
-                            <option>Aeropuerto 2</option>
-                            <option>Aeropuerto 3</option>
-                        </select>
+            <div class="box-border-sm">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="text-uppercase" for="delivery">Entrega</label>
+                            <select class="form-control" id="delivery">
+                                <option>Aeropuerto el Plumerillo</option>
+                                <option>Aeropuerto 2</option>
+                                <option>Aeropuerto 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="text-uppercase" for="deliveryDate">Fecha</label>
+                            <div class="input-group datepicker">
+                                <input type="text" class="form-control" placeholder="Seleccione la fecha de entrega" />
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <fieldset class="form-group">
+                            <legend class="text-uppercase">Horario</legend>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label class="sr-only" for="deliveryHour">Horas</label>
+                                    <select class="form-control" id="deliveryHour">
+                                        <option>01hs</option>
+                                        <option>02hs</option>
+                                        <option>03hs</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <label class="sr-only" for="deliveryMinutes">Minutos</label>
+                                    <select class="form-control" id="deliveryMinutes">
+                                        <option>10min</option>
+                                        <option>20min</option>
+                                        <option>min</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label class="text-uppercase" for="deliveryDate">Fecha</label>
-                        <div class="input-group datepicker">
-                            <input type="text" class="form-control" placeholder="Seleccione la fecha de entrega" />
-                            <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="required" for="airLine">Línea Aérea</label>
+                            <input class="form-control" id="airLine" type="text" placeholder="Escriba la línea aérea" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="required" for="airNum">Núm. de vuelo</label>
+                            <input class="form-control" id="airNum" type="text" placeholder="Escriba el número de vuelo" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="mt-sm-2"><small>La información sobre su vuelo ayudará a la confirmación de su vehículo, en caso de retraso.</small></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="devolution">Devolución</label>
+                            <select class="form-control" id="devolution">
+                                <option>Seleccione Lugar</option>
+                                <option>Lugar 2</option>
+                                <option>Lugar 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="devolutionDate">Fecha</label>
+                            <input class="form-control" id="devolutionDate" type="text" placeholder="03/11/2017">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <fieldset class="form-group">
+                            <legend class="text-uppercase">Horario</legend>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label class="sr-only" for="devolutionHour">Horas</label>
+                                    <select class="form-control" id="devolutionHour">
+                                        <option>01hs</option>
+                                        <option>02hs</option>
+                                        <option>03hs</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <label class="sr-only" for="devolutionMinutes">Minutos</label>
+                                    <select class="form-control" id="devolutionMinutes">
+                                        <option>10min</option>
+                                        <option>20min</option>
+                                        <option>30min</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="required" for="street">Calle</label>
+                            <input class="form-control" id="street" type="text" placeholder="Escriba la calle para la devolución" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="department">Departamento</label>
+                            <select class="form-control" id="department">
+                                <option>Seleccione departamento</option>
+                                <option>Departamento 2</option>
+                                <option>Departamento 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="form-group">
+                            <label for="zipCode">Cód. Postal</label>
+                            <input class="form-control" id="zipCode" type="text" placeholder="5500">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-12">
+                        <div class="checkbox checkbox-red">
+                            <input type="checkbox" id="returnInPlace">
+                            <label for="returnInPlace">
+                                Devolver en el mismo lugar
+                            </label>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <fieldset class="form-group">
-                        <legend class="text-uppercase">Horario</legend>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <label class="sr-only" for="deliveryHour">Horas</label>
-                                <select class="form-control" id="deliveryHour">
-                                    <option>01hs</option>
-                                    <option>02hs</option>
-                                    <option>03hs</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-6">
-                                <label class="sr-only" for="deliveryMinutes">Minutos</label>
-                                <select class="form-control" id="deliveryMinutes">
-                                    <option>10min</option>
-                                    <option>20min</option>
-                                    <option>min</option>
-                                </select>
-                            </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="text-uppercase" for="vehicle">Vehículo</label>
+                            <select class="form-control" id="vehicle">
+                                <option>Seleccione Modelo</option>
+                                <option>Modelo 2</option>
+                                <option>Modelo 3</option>
+                            </select>
                         </div>
-                    </fieldset>
-                </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="text-uppercase btn btn-cta btn-primary mt-sm-25 w-sm-100 w-xs-100" type="submit">Consultar</button>
+                    </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label class="required" for="airLine">Línea Aérea</label>
-                        <input class="form-control" id="airLine" type="text" placeholder="Escriba la línea aérea" required>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label class="required" for="airNum">Núm. de vuelo</label>
-                        <input class="form-control" id="airNum" type="text" placeholder="Escriba el número de vuelo" required>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <p class="mt-sm-2"><small>La información sobre su vuelo ayudará a la confirmación de su vehículo, en caso de retraso.</small></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="devolution">Devolución</label>
-                        <select class="form-control" id="devolution">
-                            <option>Seleccione Lugar</option>
-                            <option>Lugar 2</option>
-                            <option>Lugar 3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="devolutionDate">Fecha</label>
-                        <input class="form-control" id="devolutionDate" type="text" placeholder="03/11/2017">
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <fieldset class="form-group">
-                        <legend class="text-uppercase">Horario</legend>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <label class="sr-only" for="devolutionHour">Horas</label>
-                                <select class="form-control" id="devolutionHour">
-                                    <option>01hs</option>
-                                    <option>02hs</option>
-                                    <option>03hs</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-6">
-                                <label class="sr-only" for="devolutionMinutes">Minutos</label>
-                                <select class="form-control" id="devolutionMinutes">
-                                    <option>10min</option>
-                                    <option>20min</option>
-                                    <option>30min</option>
-                                </select>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label class="required" for="street">Calle</label>
-                        <input class="form-control" id="street" type="text" placeholder="Escriba la calle para la devolución" required>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="department">Departamento</label>
-                        <select class="form-control" id="department">
-                            <option>Seleccione departamento</option>
-                            <option>Departamento 2</option>
-                            <option>Departamento 3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-2">
-                    <div class="form-group">
-                        <label for="zipCode">Cód. Postal</label>
-                        <input class="form-control" id="zipCode" type="text" placeholder="5500">
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-12">
-                    <div class="checkbox">
-                        <input type="checkbox" id="returnInPlace">
-                        <label for="returnInPlace">
-                            Devolver en el mismo lugar
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="form-group">
-                        <label class="text-uppercase" for="vehicle">Vehículo</label>
-                        <select class="form-control" id="vehicle">
-                            <option>Seleccione Modelo</option>
-                            <option>Modelo 2</option>
-                            <option>Modelo 3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <button class="text-uppercase btn btn-cta btn-primary mt-sm-25 w-sm-100 w-xs-100" type="submit">Consultar</button>
-                </div>
             </div>
         </form>
     </div>
