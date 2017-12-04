@@ -497,6 +497,10 @@ a.dropdown:after {
         border: #c2d88e solid 1px;
     }
 
+    .box-border-sm.box-border-red {
+        border: #ff0000 solid 1px;
+    }
+
     .w-sm-100 {
         width: 100%;
     }
