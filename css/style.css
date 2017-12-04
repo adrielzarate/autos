@@ -13,6 +13,14 @@ ul {
     margin-bottom: 0;
 }
 
+hr.hr-blue {
+    border: 0;
+    display: block;
+    margin: 20px auto 10px;
+    border-top: #337ab7 solid thin;
+    width: 60%;
+}
+
 
 
 /* Forms */
@@ -68,6 +76,10 @@ select {
 
 .checkbox.checkbox-red label::before {
     border-color: red !important;
+}
+
+.checkbox.checkbox-red input[type="checkbox"]:checked + label::after {
+    color: red;
 }
 
 .input-group-addon {
@@ -152,18 +164,6 @@ legend {
     font-size: 16px;
     font-weight: 400;
     color: #414042;
-}
-
-.text-light {
-    color: #95979A;
-}
-
-.text-red {
-    color: #ff0000;
-}
-
-.text-green {
-    color: #39B54A;
 }
 
 /* mobile  */
@@ -421,6 +421,22 @@ a.dropdown:after {
 .pb-25 { padding-bottom: 25px; }
 .pb-3  { padding-bottom: 30px; }
 .pb-35 { padding-bottom: 35px; }
+
+.text-gray {
+    color: #999;
+}
+
+.text-light {
+    color: #95979A;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+.text-green {
+    color: #39B54A;
+}
 
 .bg-light-green {
     background-color: #D3E59E;
