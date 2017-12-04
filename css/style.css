@@ -169,7 +169,8 @@ legend {
 /* mobile  */
 
 @media (max-width: 768px) {
-    .title-bigger {
+    .title-bigger,
+    .title-big {
         font-size: 14px;
     }
     .title-bigger:after {
@@ -224,7 +225,12 @@ a.dropdown:after {
 }
 
 
+/* Total Price */
 
+.total-price {
+    background-color: #fcdf87;
+    padding: 10px;
+}
 
 /* Steps Menu */
 
@@ -321,6 +327,15 @@ a.dropdown:after {
     margin-bottom: 20px;
 }
 
+/* desktop helpers */
+
+@media (min-width: 768px) {
+    .car-features.inline-car-features ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 /* List Checked */
 
 .list-checked {
@@ -359,7 +374,9 @@ a.dropdown:after {
 /* mobile List Checked */
 
 @media (max-width: 768px) {
-    margin-bottom: 0;
+    .list-checked.extras {
+        margin-bottom: 40px;
+    }
 }
 
 /* Helpers */
