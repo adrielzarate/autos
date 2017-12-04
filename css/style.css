@@ -189,6 +189,7 @@ legend {
     font-size: 32px;
     position: relative;
     bottom: -4px;
+    line-height: 0;
 }
 
 /* Links */
@@ -490,6 +491,10 @@ a.dropdown:after {
     .box-border-sm {
         border: #999 solid 2px;
         padding: 15px;
+    }
+
+    .box-border-sm.box-border-green {
+        border: #c2d88e solid 1px;
     }
 
     .w-sm-100 {
