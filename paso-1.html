@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <label class="text-uppercase" for="deliveryDate">Fecha</label>
                             <div class="input-group datepicker">
-                                <input type="text" class="form-control" placeholder="Seleccione la fecha de entrega" />
+                                <input class="form-control" id="deliveryDate" type="text" placeholder="Seleccione la fecha de entrega" />
                                 <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
@@ -92,8 +92,13 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="devolutionDate">Fecha</label>
-                            <input class="form-control" id="devolutionDate" type="text" placeholder="03/11/2017">
+                            <label class="text-uppercase" for="devolutionDate">Fecha</label>
+                            <div class="input-group datepicker">
+                                <input class="form-control" id="devolutionDate" type="text" placeholder="Seleccione la fecha de entrega" />
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -145,15 +150,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6 col-sm-12">
+                    <div class="col-xs-6 col-sm-12 mb-1">
                         <div class="checkbox checkbox-red">
-                            <input type="checkbox" id="returnInPlace">
+                            <input type="checkbox" id="returnInPlace" checked>
                             <label for="returnInPlace">
                                 Devolver en el mismo lugar
                             </label>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="form-group">
                             <label class="text-uppercase" for="vehicle">Vehículo</label>
                             <select class="form-control" id="vehicle">
@@ -163,7 +168,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-xs-12 col-sm-4">
                         <button class="text-uppercase btn btn-cta btn-primary mt-sm-25 w-sm-100 w-xs-100" type="submit">Consultar</button>
                     </div>
             </div>

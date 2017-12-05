@@ -204,10 +204,15 @@ a.dropdown:after {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDg0MS45IDU5NS4zIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA4NDEuOSA1OTUuMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik01MjguOSwyOTcuMiIvPjxwYXRoIGQ9Ik0yMTUuNSwxODkuNWMtMiwwLTMuOCwxLjItNC42LDMuMWMtMC44LDEuOS0wLjMsNCwxLjEsNS40bDIwNS42LDIwNS42YzEsMSwyLjMsMS41LDMuNSwxLjVzMi42LTAuNSwzLjUtMS41bDIwNS41LTIwNS41ICBjMS40LTEuMywxLjktMy41LDEuMS01LjVjLTAuOC0xLjktMi42LTMuMS00LjYtMy4xTDIxNS41LDE4OS41eiIvPjwvc3ZnPg==") ;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDg0MS45IDU5NS4zIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA4NDEuOSA1OTUuMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik01MjguOSwyOTcuMiIvPjxwYXRoIGQ9Ik0yMTUuNSwxODkuNWMtMiwwLTMuOCwxLjItNC42LDMuMWMtMC44LDEuOS0wLjMsNCwxLjEsNS40bDIwNS42LDIwNS42YzEsMSwyLjMsMS41LDMuNSwxLjVzMi42LTAuNSwzLjUtMS41bDIwNS41LTIwNS41ICBjMS40LTEuMywxLjktMy41LDEuMS01LjVjLTAuOC0xLjktMi42LTMuMS00LjYtMy4xTDIxNS41LDE4OS41eiIvPjwvc3ZnPg==");
     background-size: 18px 18px;
     background-position: right 5px;
     background-repeat: no-repeat;
+}
+
+.adicionales a.sh-toggle-btn.sh-toggle-shown::after {
+    transform: rotate(180deg);
+    background-position: right -5px;
 }
 
 /* Buttons */
@@ -328,7 +333,7 @@ a.dropdown:after {
     margin-bottom: 20px;
 }
 
-/* desktop helpers */
+/* desktop Car Features */
 
 @media (min-width: 768px) {
     .car-features.inline-car-features ul {
@@ -459,6 +464,10 @@ a.dropdown:after {
     padding: 15px;
 }
 
+.sh-toggle {
+    display: none;
+}
+
 
 /* desktop helpers */
 
@@ -535,11 +544,6 @@ a.dropdown:after {
         align-items: center;
     }
 }
-
-
-
-
-
 
 /* mobile helpers */
 
