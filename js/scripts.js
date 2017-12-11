@@ -3,6 +3,10 @@ $(function() {
     var datePicker = $('.lieber-carro .datepicker');
     if( datePicker.length ) $('.lieber-carro .datepicker').datetimepicker({format: 'DD/MM/YYYY',locale: 'es'});
 
+    $('.lieber-carro .datepicker input').click(function(event){
+       $(this).siblings('.input-group-addon').click();
+    });
+
     $('.lieber-carro #returnInPlace').click(function() {
         if($(this).is(':checked')) {
             $('.lieber-carro .sh-toggle').hide();
@@ -18,6 +22,17 @@ $(function() {
             $(this).text('MOSTRAR');
         } else {
             $('.lieber-carro .adicionales .sh-toggle-xs').show();
+            $(this).text('OCULTAR');
+        }
+    });
+
+    $('.lieber-carro .similares .sh-toggle-btn').click(function() {
+        $(this).toggleClass('sh-toggle-shown');
+        if( !$(this).hasClass('sh-toggle-shown') ) {
+            $('.lieber-carro .similares #similarCar').hide();
+            $(this).text('MOSTRAR');
+        } else {
+            $('.lieber-carro .similares #similarCar').show();
             $(this).text('OCULTAR');
         }
     });

@@ -39,6 +39,7 @@
     -webkit-border-radius: 0px;
     height: 40px;
     box-shadow: none;
+    border: #e6e6e6 2px solid;
 }
 
 .lieber-carro input:focus,
@@ -80,10 +81,22 @@
     color: red;
 }
 
-.lieber-carro .input-group-addon {
+.lieber-carro .input-group-addon,
+.lieber-carro .input-group-addon .glyphicon {
     border-radius: 0;
     background-color: #fff;
     color: #999;
+    border: #e6e6e6 2px solid;
+    border-left: none;
+}
+
+.lieber-carro .input-group-addon .glyphicon {
+    color: #999;
+    border: none;
+}
+
+.lieber-carro .input-group {
+    padding: 0;
 }
 
 .lieber-carro .radio {
@@ -122,7 +135,6 @@ body .lieber-carro {
     font-weight: 300;
     color: #414042;
 }
-
 
 
 /* Typography */
@@ -235,7 +247,18 @@ body .lieber-carro {
     border-color: #666;
 }
 
+/* Add Comment */
 
+.lieber-carro .add-comment textarea {
+    height: 120px;
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    display: none;
+}
+
+.lieber-carro .add-comment input[type="checkbox"]:checked ~ textarea {
+    display: block;
+}
 
 /* Total Price */
 
@@ -244,6 +267,16 @@ body .lieber-carro {
     padding: 10px;
 }
 
+
+/* similarCar */
+.lieber-carro .similares #similarCar {
+    display: none;
+}
+
+.lieber-carro .similares a.sh-toggle-btn.sh-toggle-shown::after {
+    transform: rotate(180deg);
+    background-position: right -5px;
+}
 
 /* Steps Menu */
 
@@ -258,6 +291,7 @@ body .lieber-carro {
 .lieber-carro .nav>li.active>a,
 .lieber-carro .nav>li.active::after,
 .lieber-carro .nav>li>a:hover,
+.lieber-carro .nav>li>a:focus,
 .lieber-carro .nav>li:hover:not(:last-child)::after,
 .lieber-carro .nav>li.active:not(:last-child)::after,
 .lieber-carro .nav-pills>li.active>a,

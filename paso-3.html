@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <form class="lieber-carro" action="">
             <div class="row">
                 <div class="col-xs-12">
@@ -100,12 +100,12 @@
                                 </div>
                                 <hr class="hr-blue">
                             </div>
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 add-comment">
                                 <div class="checkbox">
                                     <input type="checkbox" id="addComent">
-                                    <label for="addComent">
-                                        ¿Desea agregar un comentario a su reserva?
-                                    </label>
+                                    <label for="addComent">¿Desea agregar un comentario a su reserva?</label>
+                                    <label class="sr-only" for="addComentTextArea"></label>
+                                    <textarea class="form-control mt-2" id="addComentTextArea"></textarea>
                                 </div>
                             </div>
                             <div class="col-xs-12 mt-2">
@@ -153,8 +153,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
+                                    <div class="col-xs-12 text-xs-center mb-2">
+                                        <h3 class="text-uppercase float-sm-l title-big">Vehículo</h3>
+                                        <a class="text-uppercase float-sm-r" href="">Modificar <span class="icon-pencil-alt"></span></a>
+                                    </div>
                                     <div class="col-xs-12">
-                                        <h4 class="text-uppercase text-xs-center title-big">Vehículo</h4>
                                         <img class="img-responsive" src="img/chevrolet.png" alt="">
                                         <h5 class="text-uppercase text-xs-center title-medium">Chevrolet Celta Advantage</h5>
                                         <div class="car-features inline-car-features mb-2">

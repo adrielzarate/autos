@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <form class="lieber-carro" action="">
             <div class="row">
                 <div class="col-xs-12">
@@ -100,12 +100,19 @@
                             <a class="visible-xs text-xs-center mb-2 sh-toggle-btn sh-toggle-shown" role="button">Ocultar detalle</a>
                         </div>
 
-                        <div class="col-xs-12 text-center">
+                        <div class="col-xs-12 text-center similares">
                             <div class="box-border">
-                                <h3 class="text-uppercase title-medium">Consultar vehículos similares</h3>
-                                <a class="text-uppercase dropdown" role="button">Mostrar</a>
+                                <label class="text-uppercase title-medium d-block" for="similarCar">Consultar vehículos similares</label>
+                                <select class="form-control" id="similarCar">
+                                    <option>Similar a Chrevrolet Celta Advantage</option>
+                                    <option>Similar 1</option>
+                                    <option>Similar 2</option>
+                                    <option>Similar 3</option>
+                                </select>
+                                <a class="text-uppercase dropdown sh-toggle-btn" role="button">Mostrar</a>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
