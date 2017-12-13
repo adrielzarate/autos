@@ -16,14 +16,17 @@
     <div class="container">
         <form class="lieber-carro" action="">
             <div class="box-border-sm">
-                <div class="row">
+                <div class="row delivery-date"> <!-- entrega fecha -->
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label class="text-uppercase" for="delivery">Entrega</label>
                             <select class="form-control" id="delivery">
-                                <option>Aeropuerto el Plumerillo</option>
-                                <option>Aeropuerto 2</option>
-                                <option>Aeropuerto 3</option>
+                                <option data-delivery="0">Seleccione el lugar de entrega</option>
+                                <option data-delivery="1">Aeropuerto el Plumerillo Mza</option>
+                                <option data-delivery="2">Oficina LIBER</option>
+                                <option data-delivery="3">Terminal del Sol - Mendoza</option>
+                                <option data-delivery="4">Zona centro</option>
+                                <option data-delivery="5">Otro</option>
                             </select>
                         </div>
                     </div>
@@ -62,7 +65,31 @@
                         </fieldset>
                     </div>
                 </div>
-                <div class="row sh-toggle">
+                <div class="row delivery-address"> <!-- entrega direccion -->
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="required" for="street-delivery">Calle</label>
+                            <input class="form-control" id="street-delivery" type="text" placeholder="Escriba la calle para la devolución" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="department-delivery">Departamento</label>
+                            <select class="form-control" id="department-delivery">
+                                <option>Seleccione departamento</option>
+                                <option>Departamento 2</option>
+                                <option>Departamento 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="form-group">
+                            <label for="zipCode-delivery">Cód. Postal</label>
+                            <input class="form-control" id="zipCode-delivery" type="text" placeholder="5500">
+                        </div>
+                    </div>
+                </div>
+                <div class="row airline"> <!-- linea aerea -->
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label class="required" for="airLine">Línea Aérea</label>
@@ -79,14 +106,17 @@
                         <p class="mt-sm-2"><small>La información sobre su vuelo ayudará a la confirmación de su vehículo, en caso de retraso.</small></p>
                     </div>
                 </div>
-                <div class="row sh-toggle">
+                <div class="row devolution-date"> <!-- devolucion fecha -->
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="devolution">Devolución</label>
+                            <label class="text-uppercase" for="devolution">Devolución</label>
                             <select class="form-control" id="devolution">
-                                <option>Seleccione Lugar</option>
-                                <option>Lugar 2</option>
-                                <option>Lugar 3</option>
+                                <option data-devolution="0">Seleccione el lugar de Devolución</option>
+                                <option data-devolution="1">Aeropuerto el Plumerillo Mza</option>
+                                <option data-devolution="2">Oficina LIBER</option>
+                                <option data-devolution="3">Terminal del Sol - Mendoza</option>
+                                <option data-devolution="4">Zona centro</option>
+                                <option data-devolution="5">Otro</option>
                             </select>
                         </div>
                     </div>
@@ -125,17 +155,17 @@
                         </fieldset>
                     </div>
                 </div>
-                <div class="row sh-toggle">
+                <div class="row devolution-address"> <!-- devolucion direccion -->
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="required" for="street">Calle</label>
-                            <input class="form-control" id="street" type="text" placeholder="Escriba la calle para la devolución" required>
+                            <label class="required" for="street-devolution">Calle</label>
+                            <input class="form-control" id="street-devolution" type="text" placeholder="Escriba la calle para la devolución" required>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="department">Departamento</label>
-                            <select class="form-control" id="department">
+                            <label for="department-devolution">Departamento</label>
+                            <select class="form-control" id="department-devolution">
                                 <option>Seleccione departamento</option>
                                 <option>Departamento 2</option>
                                 <option>Departamento 3</option>
@@ -144,15 +174,15 @@
                     </div>
                     <div class="col-xs-6 col-sm-2">
                         <div class="form-group">
-                            <label for="zipCode">Cód. Postal</label>
-                            <input class="form-control" id="zipCode" type="text" placeholder="5500">
+                            <label for="zipCode-devolution">Cód. Postal</label>
+                            <input class="form-control" id="zipCode-devolution" type="text" placeholder="5500">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 mb-1">
                         <div class="checkbox checkbox-red">
-                            <input type="checkbox" id="returnInPlace" checked>
+                            <input type="checkbox" id="returnInPlace">
                             <label for="returnInPlace">
                                 Devolver en el mismo lugar
                             </label>

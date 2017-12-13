@@ -179,6 +179,11 @@ body .lieber-carro {
     color: #414042;
 }
 
+.lieber-carro .title-thin {
+    font-size: 16px;
+    font-weight: 300;
+}
+
 
 /* mobile  */
 
@@ -250,7 +255,7 @@ body .lieber-carro {
 /* Add Comment */
 
 .lieber-carro .add-comment textarea {
-    height: 120px;
+    height: 200px;
     width: calc(100% + 20px);
     margin-left: -20px;
     display: none;
@@ -269,14 +274,14 @@ body .lieber-carro {
 
 
 /* similarCar */
-.lieber-carro .similares #similarCar {
-    display: none;
-}
+// .lieber-carro .similares #similarCar {
+//     display: none;
+// }
 
-.lieber-carro .similares a.sh-toggle-btn.sh-toggle-shown::after {
-    transform: rotate(180deg);
-    background-position: right -5px;
-}
+// .lieber-carro .similares a.sh-toggle-btn.sh-toggle-shown::after {
+//     transform: rotate(180deg);
+//     background-position: right -5px;
+// }
 
 /* Steps Menu */
 
